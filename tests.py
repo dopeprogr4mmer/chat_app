@@ -228,8 +228,8 @@ if __name__ == '__main__':
     when you run the script agian with the same arguments."""
 
     #change these variables
-    username = "hello"
-    groupname = "world"
+    username = "phantom"
+    groupname = "phantomzone"
     member = username
 
     tests = [

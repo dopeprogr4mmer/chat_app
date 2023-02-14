@@ -230,8 +230,7 @@ if __name__ == '__main__':
     #change these variables
     username = "phantom"
     groupname = "phantomzone"
-    member = username
-
+    
     tests = [
         test_login,
         test_create_user,
@@ -255,6 +254,8 @@ if __name__ == '__main__':
                 test()
             elif test == test_add_member:
                 test(groupname, member)
+            elif test in {test_create_user, test_edit_user}:
+                test(username)
             else:
                 test(groupname)
             count += 1

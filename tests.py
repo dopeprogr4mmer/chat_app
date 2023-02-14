@@ -228,8 +228,8 @@ if __name__ == '__main__':
     when you run the script agian with the same arguments."""
 
     #change these variables
-    username = "phantom"
-    groupname = "phantomzone"
+    username = "chandler"
+    groupname = "friends"
     
     tests = [
         test_login,
@@ -253,7 +253,7 @@ if __name__ == '__main__':
             if test in {test_login, test_logout}:
                 test()
             elif test == test_add_member:
-                test(groupname, member)
+                test(groupname, username)
             elif test in {test_create_user, test_edit_user}:
                 test(username)
             else:

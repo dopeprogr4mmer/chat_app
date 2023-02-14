@@ -23,5 +23,5 @@
 ## NOTE: 
 ### Please change the variables 'username' and 'groupname' in tests.py everytime 
 ### you run the script. Running the script creates entries in DB which may throw 
-### assertion errors the next time you run the script with the same arguments."""
+### assertion errors the next time you run the script with the same arguments.
  

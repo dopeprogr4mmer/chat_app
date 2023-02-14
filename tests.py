@@ -258,12 +258,12 @@ if __name__ == '__main__':
                 test(username)
             else:
                 test(groupname)
-            count += 1
+            passed += 1
         except:
             print(f'Test case failed for {test.__name__}', '\n')
             continue
         finally:
-            passed += 1
+            count += 1
 
     print('\n')
-    print(f"------------------{count}/{passed} test cases passed------------------")
+    print(f"------------------{passed}/{count} test cases passed------------------")

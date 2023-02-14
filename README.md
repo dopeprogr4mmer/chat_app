@@ -17,6 +17,7 @@
  ```pyhton chat_app.py```
  
 ### Step 4: _Run the tests_
+ -  On an another terminal activate the virtual environment as above
  -  run >
  ```pyhton tests.py```
  

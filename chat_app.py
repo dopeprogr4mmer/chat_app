@@ -1,12 +1,13 @@
 from flask import Flask, request, session
 from werkzeug.security import generate_password_hash, check_password_hash
 from connections import users_collection, groups_collection, messages_collection
+from config import secret_key
 from datetime import datetime
 import traceback
 
 app = Flask(__name__)
 
-app.secret_key = "7A244226452948404D63516A5EWD3T6E5A7234753778214125442A462D4"
+app.secret_key = secret_key
 
 users    = users_collection()
 groups   = groups_collection()

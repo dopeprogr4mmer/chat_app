@@ -1,7 +1,8 @@
 from pymongo import MongoClient 
 from datetime import datetime
+from config import mongo_url
 
-CLUSTER = MongoClient("mongodb+srv://ph4ntomphoenix:qjwPqGnA2CVCykPw@phantomzone.a2drk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+CLUSTER = MongoClient(mongo_url)
 DB = 'chat_app'
 
 def users_collection():
